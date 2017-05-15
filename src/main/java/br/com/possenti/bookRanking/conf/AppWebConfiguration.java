@@ -6,9 +6,10 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import br.com.possenti.bookRanking.controller.AppController;
+import br.com.possenti.bookRanking.dao.BookDAO;
 
 @EnableWebMvc
-@ComponentScan(basePackageClasses = { AppController.class })
+@ComponentScan(basePackageClasses = { AppController.class, BookDAO.class })
 public class AppWebConfiguration {
 	
 	@Bean
