@@ -17,7 +17,8 @@ public class BookDAO {
 	
 	
 	public void save(Book book){
-		
+        manager.persist(book);
+
 	}
 	
 }
