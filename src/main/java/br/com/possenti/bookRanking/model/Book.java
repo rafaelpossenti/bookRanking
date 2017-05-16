@@ -1,5 +1,8 @@
 package br.com.possenti.bookRanking.model;
 
+import java.util.List;
+
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,6 +19,9 @@ public class Book {
 	private String title;
 	private String description;
 	private int pages;
+	
+	@ElementCollection
+	private List<Price> prices;
 	
 	public int getId() {
 		return id;
@@ -40,6 +46,12 @@ public class Book {
 	}
 	public void setPages(int pages) {
 		this.pages = pages;
+	}
+	public List<Price> getPrices() {
+		return prices;
+	}
+	public void setPrices(List<Price> prices) {
+		this.prices = prices;
 	}
 	
 	@Override
