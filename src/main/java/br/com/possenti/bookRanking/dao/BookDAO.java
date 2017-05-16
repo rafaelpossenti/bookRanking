@@ -1,5 +1,7 @@
 package br.com.possenti.bookRanking.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -19,6 +21,12 @@ public class BookDAO {
 	public void save(Book book){
         manager.persist(book);
 
+	}
+
+
+	public List<Book> list() {
+		// TODO Auto-generated method stub
+		return manager.createQuery("select p from Book p", Book.class).getResultList();
 	}
 	
 }
