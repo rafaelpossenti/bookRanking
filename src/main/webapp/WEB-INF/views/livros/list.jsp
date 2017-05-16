@@ -13,6 +13,8 @@
 	
 	<h1>Lista de Livros </h1>
 	
+	<div>${sucesso} </div>
+	
 	<table>
 		<tr>
 			<td>Título</td>
