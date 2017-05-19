@@ -13,7 +13,7 @@
 </head>
 <body>
 	<form:form action="${s:mvcUrl('BC#save').build() } " method="post"
-		commandName="book">
+		commandName="book" enctype="multipart/form-data">
 		<div>
 			<label>Título</label> <input type="text" name="title" />
 			<form:errors path="title" />
@@ -39,7 +39,7 @@
 
 		<div>
 			<label>Sumário</label> 
-			<input name="sumario" type="file" />
+			<input type="file" name="summary" />
 		</div>
 
 

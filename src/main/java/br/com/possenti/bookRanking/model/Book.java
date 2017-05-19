@@ -11,8 +11,6 @@ import javax.persistence.Id;
 @Entity
 public class Book {
 	
-	
-
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
 	
@@ -22,6 +20,8 @@ public class Book {
 	
 	@ElementCollection
 	private List<Price> prices;
+	
+	private String summary;
 	
 	public int getId() {
 		return id;
@@ -52,6 +52,12 @@ public class Book {
 	}
 	public void setPrices(List<Price> prices) {
 		this.prices = prices;
+	}
+	public String getSummary() {
+		return summary;
+	}
+	public void setSummary(String summary) {
+		this.summary = summary;
 	}
 	
 	@Override
