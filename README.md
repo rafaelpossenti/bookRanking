@@ -8,5 +8,6 @@
 + JPA
 + thymeleaf/Bootstrap
 + PostgresSql
++
 
 ## Repository
