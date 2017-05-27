@@ -12,3 +12,7 @@
 ## Repository
 
 ## Execution
+
+mvn clean install
+mvn package
+java -jar target/smartGoals.jar
