@@ -7,7 +7,6 @@
 + Spring MVC
 + JPA
 + thymeleaf/Bootstrap/CSS
-+ PostgresSql 
 
 ## Repository
 
